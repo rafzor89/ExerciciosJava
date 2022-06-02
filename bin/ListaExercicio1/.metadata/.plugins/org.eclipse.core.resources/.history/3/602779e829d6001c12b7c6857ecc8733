@@ -1,0 +1,50 @@
+/**
+ * A prefeitura de uma cidade deseja fazer uma pesquisa entre seus habitantes. Esta
+ * pesquisa deseja coletar os dados sobre o salario e numero de filhos de cada habitante e apos
+ * as leituras, escrever:
+ * 
+ * a) média de salario da população
+ * b)media de filhos
+ * c)maior salario dos habitantes
+ * d)percentual de pessoas com salario menor que R$150,00
+ */
+package ListaExercicio2;
+import java.util.Scanner;
+
+/**
+ * @author guest01
+ *
+ */
+public class Exercicio10_Naoterminei {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		float salario = 0;
+		int filho = 0;
+		float mSalario = 0;
+		
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		for(int i = 0; i<5; i++) {
+			System.out.println("Digite o Salário do Habitante:");
+			float salarioo = teclado.nextFloat();
+			salario = salarioo+salarioo;
+			System.out.println("Digite quantos filhos o Habitante tem:");
+			int filhoo = teclado.nextInt();
+			filho = filhoo + filhoo;
+			if(salario>salario) {
+				mSalario = salario;
+			}
+			
+		}
+		float mediaSalario = salario/5;
+		int mediaFilho = filho/5;
+		
+		System.out.println("a)média do salario dos Habitante é "+mediaSalario+" b)média de filhos é "+mediaFilho+" c)maior salario é de R$ "+mSalario);
+
+	}
+
+}

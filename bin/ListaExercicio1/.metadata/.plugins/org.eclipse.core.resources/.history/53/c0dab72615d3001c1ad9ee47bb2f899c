@@ -1,0 +1,58 @@
+/**
+ * Uma empresa faz uma pesquisa para saber se as pessoas gostaram ou não de um
+ * novo produto lançado no mercado. A resposta, portanto, era "sim" ou "não".]
+ * Calcule e escreva o numero de pessoas que responderam "sim" e o numero de pessoas
+ * que responderam "não". Simule 5 pessoas.
+ */
+package ListaExercicio2;
+import java.util.Scanner;
+
+/**
+ * @author guest01
+ *
+ */
+public class Exercicio5 {
+
+	
+
+	
+
+	private static int pessoas12;
+	private static int pessoas14;
+
+	/**
+	 * @param args
+	 * @param salario 
+	 * @param filho 
+	 * @param salar 
+	 * @param filh 
+	 */
+	public static void main(String[] args) {
+		int pessoas1 = 0;
+		int pessoass1 = 0;
+		
+		
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		
+		for(int i = 0 ; i<5; i++) {
+			System.out.println("Você gostou do novo Produto (Sim ou Não):");
+			String pesq = teclado.nextLine();
+			if(pesq == "sim") {
+				int pessoas11 = 0;
+				int pessoas12 = pessoas11 + 1;
+			} else {
+				int pessoas14 = 0;
+				int pessoass13 =pessoas14+1;
+				
+			}
+			
+		}
+		pessoas1 = pessoas12;
+		pessoass1 = pessoas14;
+		System.out.println(pessoas1+" responderam Sim e "+pessoass1+" responderam Não!");
+
+	}
+
+}

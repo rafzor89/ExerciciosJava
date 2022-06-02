@@ -25,8 +25,8 @@ public class Exercicio11 {
 		} else if (n1 == 4 || n1 == 9) {
 			double raiz = Math.sqrt(n1);
 			System.out.println("A Raiz quadrada do numero que você digitou é "+raiz);
-		} else if (n1 >= 6 || n1 <= 8){
-			double div = n1/9;
+		} else if (n1 >= 6 && n1 <= 8){
+			double div = (double)n1 / 9;
 			System.out.println("Seu numero dividido por 9 é "+div);
 		}  else {
 			System.out.println("Valor Invalido");

@@ -14,14 +14,6 @@ import java.util.Scanner;
  */
 public class Exercicio5 {
 
-	
-
-	
-
-	
-
-
-
 	/**
 	 * @param args
 	 * @param salario 

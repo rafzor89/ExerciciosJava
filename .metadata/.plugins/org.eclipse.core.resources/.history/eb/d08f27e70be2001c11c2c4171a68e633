@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package Array;
+
+/**
+ * @author guest01
+ *
+ */
+public class Quarto {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

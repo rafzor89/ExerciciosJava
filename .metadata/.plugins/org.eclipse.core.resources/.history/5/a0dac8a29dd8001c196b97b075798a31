@@ -1,0 +1,78 @@
+/*
+ * Construa um algoritmo que:
+ * a) - Leia várias fichas contendo cada uma:
+ * *sua matricula
+ * *o nome de um atleta
+ * *o seu peso
+ * *o sexo
+ * *a idade
+ * b) - calcule e imprima
+ * a) - O peso e a matricula do alteta mais pesado
+ * b)  - A media de idade dos atletas do sexo feminino
+ * c) - A matricula e o peso do atleta masculino de menor peso
+ * OBS: O programa deve finalizar quando for digitada matricula = 0
+ */
+
+
+package ListaExercicio3;
+import java.util.Scanner;
+import java.util.InputMismatchException;
+
+/**
+ * @author guest01
+ *
+ */
+public class Exercicio1 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double maiorP = 1;
+		int maiorCod = 0;
+		double menorP = 1000;
+		int i = 0;
+		int menorCod = 0;
+		int cod = 1;
+		int ida = 0;
+		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Digite a matricula do atleta, PARA SAIR DIGITE 0");
+		cod = teclado.nextInt();
+		System.out.println("Nome: ");
+		String nome = teclado.nextLine();
+		System.out.println("Digite o peso do atleta:");
+		double peso = teclado.nextDouble();
+		
+		System.out.println("Digite o sexo do atleta M ou F:");
+		char sex = teclado.next().charAt(0);
+		
+		System.out.println("Digite a idade do atleta:");
+		ida = teclado.nextInt();
+		
+		while (cod != 0){		
+		
+			if(peso > 0) {
+				maiorP = peso;
+				maiorCod = cod;
+			}
+			if(sex == 'f' || sex == 'F') {
+				i++;
+			}
+			if(peso < 1000 && sex == 'M') {
+				menorP = peso;
+				menorCod = cod;
+				
+			}
+			
+		}
+		/*int mediaIdade = ida/i;*/
+		System.out.println("a) O atleta de cod "+maiorCod+" é o mais pesado com "+maiorP+" kilos");
+		/*System.out.println("b) A media de idade das atletas do sexo feminino é de "+mediaIdade);*/
+		System.out.println("c) O atleta de cod "+menorCod+" é o mais leve com "+menorP+" kilos");
+
+	}
+
+}

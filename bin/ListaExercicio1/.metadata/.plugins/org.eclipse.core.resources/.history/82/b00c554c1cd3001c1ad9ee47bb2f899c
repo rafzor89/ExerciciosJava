@@ -1,0 +1,30 @@
+/**
+ * Com base nas informações acima leia: O numero do empregado (codigo), o ano de seu nascimento e o ano de seu ingresso
+ * na empresa. O Programa deverá escrever a idade e o tempo de trabalho do empregado e a mensagem "Requerer aposentadorai"
+ * ou "Não requerer".
+ */
+package ListaExercicio2;
+import java.util.Calendar;
+import java.util.Scanner;
+
+/**
+ * @author guest01
+ *
+ */
+public class Exercicio9 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Calendar cal = null;
+		int year = cal.get(Calendar.YEAR);
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println(year);
+		
+
+	}
+
+}

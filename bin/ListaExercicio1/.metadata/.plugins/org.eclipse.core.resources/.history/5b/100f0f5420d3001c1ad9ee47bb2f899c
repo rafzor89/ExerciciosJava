@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package ListaExercicio2;
+import java.util.Scanner;
+
+/**
+ * @author guest01
+ *
+ */
+public class Exercicio11 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Digite um Numero:");
+		int n1 = teclado.nextInt();
+		
+		if(n1>=1 || n1==3) {
+			n1 = n1*n1;
+			System.out.println("O numero que você digitou ao Quadrado "+n1);
+		}
+
+	}
+
+}

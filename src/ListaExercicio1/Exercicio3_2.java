@@ -25,10 +25,15 @@ public class Exercicio3_2 {
 	public static void main(String[] args) {
 		
 		Scanner teclado = new Scanner(System.in);
+		float precomora = 0;
 		
 		System.out.println("Quantos quilos de Morango:");
 		float mora = teclado.nextFloat();
-		float precomora = (float) (mora*2.50);
+		if(mora > 5) {
+			precomora = (float) (mora*2.20);
+		} else {
+			precomora = (float) (mora*2.50);
+		}
 		
 		System.out.println("Quantos quilos de Maça");
 		float maca = teclado.nextFloat();

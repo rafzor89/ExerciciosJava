@@ -36,6 +36,8 @@ public class Exercicio1 {
 		// TODO Auto-generated method stub
 		System.out.println("Digite a Velocidade do carro:");
 		int velocidade = teclado.nextInt();
+		
+		System.out.println("RADAR!!!");
 				
 		if(velocidade > 80) {
 			float valorMulta = (velocidade - 80)*7; 

@@ -1,0 +1,26 @@
+/*
+ * Crie um algoritmo que leia um valor e a partir disso faça: 1) se o valor for 1, 2 ou 3,
+ * mostre o valor elevado ao quadrado; 2) se o valor for o numero 4 ou 9, 
+ */
+
+
+package ListaExercicio2;
+import java.util.Scanner;
+
+/**
+ * @author guest01
+ *
+ */
+public class Exercicio13 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		// TODO Auto-generated method stub
+
+	}
+
+}
