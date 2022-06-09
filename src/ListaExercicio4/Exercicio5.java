@@ -21,19 +21,20 @@ public class Exercicio5 {
 		temp = new float [12];
 		float media = 0;
 		
+		
 		for(int i = 0; i < temp.length; i++) {
 			System.out.println("Digite a Média da temperatura do mês: ");
 			temp[i] = teclado.nextFloat();
 			
 		}
-		for(int i = 0; i<1;i++) {
-			System.out.println("1 - Janeiro: "+temp[i]+", 2 - Fevereiro: "+temp[i]+", 3 - Março: "+temp[i]+", 4 - Abril: "+temp[i]
-					+", 5 - Maio: "+temp[i]+", 6 - Junho: "+temp[i]+", 7 - Julho: "+temp[i]+", 8 - Agosto: "+temp[i]+", 9 - Setembro: "+temp[i]+
-					", 10 - Outubro: "+temp[i]+", 11 - Novembro: "+temp[i]+", 12 - Dezembro: "+temp[i]);
+		for(int i = 0; i < 1; i++) {
+			System.out.println("1 - Janeiro: "+temp[0]+", 2 - Fevereiro: "+temp[1]+", 3 - Março: "+temp[2]+", 4 - Abril: "+temp[3]
+					+", 5 - Maio: "+temp[4]+", 6 - Junho: "+temp[5]+", 7 - Julho: "+temp[6]+", 8 - Agosto: "+temp[7]+", 9 - Setembro: "+temp[8]+
+					", 10 - Outubro: "+temp[9]+", 11 - Novembro: "+temp[10]+", 12 - Dezembro: "+temp[11]);
 		}
 		
 		media = (temp[0]+temp[1]+temp[2]+temp[3]+temp[4]+temp[5]+temp[6]+temp[7]+temp[8]+temp[9]+temp[10]+temp[11])/12;
-		System.out.println("A media da temperatura anual é de: "+media);
+		System.out.println(" A media da temperatura anual é de: "+media);
 	}
 
 }
