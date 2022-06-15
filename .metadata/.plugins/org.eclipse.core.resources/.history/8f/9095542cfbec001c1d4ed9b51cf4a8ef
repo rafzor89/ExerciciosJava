@@ -70,7 +70,9 @@ public class DesafioMaquina {
 				tempo5 = (est5*1000)/5;
 				break;
 			}
-			case 2: {					
+			case 2: {
+				
+					
 					System.out.println("======================================");
 					System.out.println("  SIMULAÇÃO DA MAQUINA DE LAVAR");
 					System.out.println("======================================");

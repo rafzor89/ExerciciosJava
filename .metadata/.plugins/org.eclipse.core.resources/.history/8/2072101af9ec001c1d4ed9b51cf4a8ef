@@ -5,7 +5,11 @@ public class DesafioMaquina {
 
 	public static void main(String[] args) throws InterruptedException {
 		int cod;
-		double lavP = 0, lavN = 0, lavR = 0, lavE = 0, lavC = 0;
+		double lavP = 0;
+		double lavN = 0;
+		double lavR = 0;
+		double lavE = 0;
+		double lavC = 0;
 		int nome = 0, est1 = 0, est2 = 0, est3 = 0, est4 = 0, est5 = 0;
 		int volt = 0, tempo1 = 0, tempo2 = 0, tempo3 = 0, tempo4 = 0, tempo5 = 0;
 		int kg = 0;
@@ -34,14 +38,10 @@ public class DesafioMaquina {
 				System.out.println("Digite a Marca da Máquina:");
 				marca = teclado.nextLine();
 				marca = teclado.nextLine();
-				while(nome != 5 && nome != 7 && nome != 10 && nome != 15) {
 				System.out.println("Escolha o Modelo da Máquina: 5, 7, 10 ou 15");
 				nome = teclado.nextInt();
-				}
-				while (volt != 220 && volt != 110) {
 				System.out.println("Voltagem: (220v ou 110v: ");
 				volt = teclado.nextInt();
-				}
 				if (nome == 5) {
 					kg = 5;
 				} else if (nome == 7) {
@@ -70,7 +70,9 @@ public class DesafioMaquina {
 				tempo5 = (est5*1000)/5;
 				break;
 			}
-			case 2: {					
+			case 2: {
+				if (nome == 5 || nome == 7 || nome == 10 || nome == 15) {
+					if (volt == 110 || volt == 220) {
 					System.out.println("======================================");
 					System.out.println("  SIMULAÇÃO DA MAQUINA DE LAVAR");
 					System.out.println("======================================");
@@ -264,8 +266,20 @@ public class DesafioMaquina {
 					}
 					}
 					break;
-					
-												
+					} else {
+						System.out.println("                                      ");
+						System.out.println("                                      ");
+						System.out.println("!!!!Escolha Máquina do catálago!!!!");
+						System.out.println("                                      ");
+						System.out.println("                                      ");
+					}
+				} else{
+					System.out.println("                                      ");
+					System.out.println("                                      ");
+					System.out.println("!!!!Escolha Máquina do catálago!!!!");
+					System.out.println("                                      ");
+					System.out.println("                                      ");
+				}								
 				}				
 			}		
 		} while (cod != 0);

@@ -34,11 +34,9 @@ public class DesafioMaquina {
 				System.out.println("Digite a Marca da Máquina:");
 				marca = teclado.nextLine();
 				marca = teclado.nextLine();
-				while(nome != 5 && nome != 7 && nome != 10 && nome != 15) {
 				System.out.println("Escolha o Modelo da Máquina: 5, 7, 10 ou 15");
 				nome = teclado.nextInt();
-				}
-				while (volt != 220 && volt != 110) {
+				while (volt != 220 || volt != 110) {
 				System.out.println("Voltagem: (220v ou 110v: ");
 				volt = teclado.nextInt();
 				}
@@ -70,7 +68,9 @@ public class DesafioMaquina {
 				tempo5 = (est5*1000)/5;
 				break;
 			}
-			case 2: {					
+			case 2: {
+				if (nome == 5 || nome == 7 || nome == 10 || nome == 15) {
+					
 					System.out.println("======================================");
 					System.out.println("  SIMULAÇÃO DA MAQUINA DE LAVAR");
 					System.out.println("======================================");
@@ -265,7 +265,13 @@ public class DesafioMaquina {
 					}
 					break;
 					
-												
+				} else{
+					System.out.println("                                      ");
+					System.out.println("                                      ");
+					System.out.println("!!!!Escolha Máquina do catálago!!!!");
+					System.out.println("                                      ");
+					System.out.println("                                      ");
+				}								
 				}				
 			}		
 		} while (cod != 0);
