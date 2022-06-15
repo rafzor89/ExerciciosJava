@@ -268,9 +268,7 @@ public class DesafioMaquina {
 					
 				}else {
 					System.out.println("                                      ");
-					System.out.println("                                      ");
-					System.out.println("Por favor, escolha uma Maquina do catálogo");
-					System.out.println("                                      ");
+					System.out.println("Escolha uma Maquina do catálogo");
 					System.out.println("                                      ");
 				}
 				}				

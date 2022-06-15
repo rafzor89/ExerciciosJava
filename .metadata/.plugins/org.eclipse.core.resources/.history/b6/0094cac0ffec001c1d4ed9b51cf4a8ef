@@ -70,8 +70,7 @@ public class DesafioMaquina {
 				tempo5 = (est5*1000)/5;
 				break;
 			}
-			case 2: {	
-				if(nome == 5 || nome == 7 || nome == 10 || nome == 15) {
+			case 2: {					
 					System.out.println("======================================");
 					System.out.println("  SIMULAÇÃO DA MAQUINA DE LAVAR");
 					System.out.println("======================================");
@@ -266,13 +265,7 @@ public class DesafioMaquina {
 					}
 					break;
 					
-				}else {
-					System.out.println("                                      ");
-					System.out.println("                                      ");
-					System.out.println("Por favor, escolha uma Maquina do catálogo");
-					System.out.println("                                      ");
-					System.out.println("                                      ");
-				}
+												
 				}				
 			}		
 		} while (cod != 0);
